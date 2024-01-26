@@ -246,9 +246,9 @@ class GlobalFunctionsHelper
      * @param string $suffix
      * @return string
      */
-    public function basename($path, $suffix = '')
+    public function basename($path, ?string $suffix = null)
     {
-        return \basename($path, $suffix);
+        return \basename($path, $suffix ?? '');
     }
 
     /**
